@@ -1,22 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { textSpanEnd } from 'typescript';
-import ItemQuantitavo from './components/itens_quantitativos/items';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-
-const dados = [
-  {
-    id: 1,
-    key: "teste",
-    value: "1",
-  }
-];
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-  <ItemQuantitavo data={dados}/>
+    <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 reportWebVitals();
